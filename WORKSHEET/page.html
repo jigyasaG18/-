@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Worksheets</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .worksheets-container {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .worksheets-header h1 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .worksheets-header p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .worksheets-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .worksheet-item {
+            width: 100%;
+            background-color: #e0f7fa;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .worksheet-item p {
+            font-size: 1.1em;
+            color: #00796b;
+        }
+
+        .download-btn {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #ffffff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .download-btn:hover {
+            background-color: #388E3C;
+        }
+    </style>
+</head>
+<body>
+    <div class="worksheets-container">
+        <header class="worksheets-header">
+            <h1>Practice Worksheets</h1>
+            <p>Download and practice each worksheet below:</p>
+        </header>
+
+        <div class="worksheets-list">
+            <div class="worksheet-item">
+                <p>Instruction Worksheet</p>
+                <a href="worksheet 5.pdf" download class="download-btn">Download</a>
+            </div>
+            <div class="worksheet-item">
+                <p>Sound Discrimination</p>
+                <a href="worksheet 1.pdf" download class="download-btn">Download</a>
+            </div>
+            <div class="worksheet-item">
+                <p>Matching Sound</p>
+                <a href="worksheet 2.pdf" download class="download-btn">Download</a>
+            </div>
+            <div class="worksheet-item">
+                <p>Find the Rhyme</p>
+                <a href="worksheet 3.pdf" download class="download-btn">Download</a>
+            </div>
+            <div class="worksheet-item">
+                <p>Find the Missing Sound</p>
+                <a href="Worksheet 4.pdf" download class="download-btn">Download</a>
+            </div>
+            <div class="worksheet-item">
+                <p>Countries Word Search</p>
+                <a href="worksheet 6 (1).pdf" download class="download-btn">Download</a>
+            </div>
+            <div class="worksheet-item">
+                <p>ABC Order</p>
+                <a href="worksheet 7.pdf" download class="download-btn">Download</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

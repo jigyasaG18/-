@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonics Practice</title>
+    <link rel="stylesheet" href="phase.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Let's practice!</h1>
+        <div class="grid-container">
+            <div class="card" onclick="playAudio('audio-juice')">
+                <img src="../phaseimg/s-00.png" alt="juice">
+                <audio id="audio-juice" src="../aud/s-00.mp3"></audio>
+            </div>
+            <div class="card" onclick="playAudio('audio-sky')">
+                <img src="../phaseimg/s-01.png" alt="ant">
+                <audio id="audio-sky" src="../aud/s-02.mp3"></audio>
+            </div>
+            <div class="card" onclick="playAudio('audio-tomato')">
+                <img src="../phaseimg/s-02.png" alt="tomato">
+                <audio id="audio-tomato" src="../aud/s-02.mp3"></audio>
+            </div>
+            <div class="card" onclick="playAudio('audio-pear')">
+                <img src="../phaseimg/s-03.png" alt="pear">
+                <audio id="audio-pear" src="../aud/s-03.mp3"></audio>
+            </div>
+            <div class="card" onclick="playAudio('audio-ant2')">
+                <img src="../phaseimg/s-04.png" alt="ant">
+                <audio id="audio-ant2" src="../aud/s-04.mp3"></audio>
+            </div>
+            <div class="card" onclick="playAudio('audio-ant3')">
+                <img src="../phaseimg/s-05.png" alt="ant">
+                <audio id="audio-ant3" src="../aud/s-05.mp3"></audio>
+            </div>
+            <div class="card" onclick="playAudio('audio-ant4')">
+                <img src="../phaseimg/s-06.png" alt="ant">
+                <audio id="audio-ant4" src="../aud/s-06.mp3"></audio>
+            </div>
+            <div class="card" onclick="playAudio('audio-ant5')">
+                <img src="../phaseimg/s-07.png" alt="ant">
+                <audio id="audio-ant5" src="../aud/s-07.mp3"></audio>
+            </div>
+            <div class="card" onclick="playAudio('audio-ant6')">
+                <img src="../phaseimg/s-08.png" alt="ant">
+                <audio id="audio-ant6" src="../aud/s-08.mp3"></audio>
+            </div>
+            <div class="card" onclick="playAudio('audio-ant7')">
+                <img src="../phaseimg/s-09.png" alt="ant">
+                <audio id="audio-ant7" src="../aud/s-09.mp3"></audio>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function playAudio(id) {
+            const audioElement = document.getElementById(id);
+            audioElement.play();
+        }
+    </script>
+    

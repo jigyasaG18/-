@@ -1,0 +1,98 @@
+/* General body styles */
+body {
+    background: linear-gradient(135deg, #e0f7fa, #ffeb3b); /* Gradient background from light cyan to bright yellow */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffcc80; /* Soft orange background */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3em; /* Large title */
+    color: #d32f2f; /* Deep red */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none; /* Remove default list style */
+    padding: 0;
+}
+
+nav li {
+    display: inline; /* Inline list items */
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2em; /* Larger font for links */
+    color: #4a148c; /* Dark purple */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #e91e63; /* Pink on hover */
+}
+
+/* Main section styles */
+main {
+    margin-top: 20px;
+}
+
+/* Section styles */
+section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffffff; /* White background */
+    border: 2px dashed #ff5722; /* Dashed orange border */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1976d2; /* Bright blue for headings */
+}
+
+/* List styles */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.2em; /* Slightly larger text for list items */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #666; /* Light gray */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5em; /* Smaller header on mobile */
+    }
+
+    nav li {
+        display: block; /* Stack navigation links on small screens */
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}

@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../hills-and-clouds.svg);/* sky blue background */
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden; /* This ensures the image stays within the border */
+    text-align: center;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 100%; /* This ensures the image takes up the entire card */
+    object-fit: cover; /* Makes sure the image covers the entire card without distortion */
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile screens */
+    }
+}
